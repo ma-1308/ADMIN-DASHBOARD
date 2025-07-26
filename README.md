@@ -1,5 +1,6 @@
 🛠️ What I Built
-An admin dashboard that is  fully responsive designed to manage online courses, students, and instructors. 
+
+An admin dashboard that is  responsive designed to manage online courses, students, and instructors. 
 Includes a modern UI layout with a left sidebar, top navigation bar, and dynamic content sections for quick insights.
 
 Key Features
