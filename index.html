@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+<!-- FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+<div class="grid-container">
+    <!-- Header -->
+<header class="header">
+    <div class="menu-icon" onclick="openSidebar()">
+        <span class="material-icons-outlined">menu</span>
+    </div>
+    <div class="header-left">
+        <span class="material-icons-outlined">search</span>
+
+    </div>
+    <div class="header-right">
+        <span class="material-icons-outlined">notifications</span>
+        <span class="material-icons-outlined">account_circle</span>
+        <span class="material-icons-outlined">logout</span>
+
+    </div>
+</header>
+    <!--siderbar-->
+    <aside id="sidebar">
+    <div class="sidebar-title">
+    <div class="sidebar-brand"><span class="material-icons-outlined">person</span>ADMIN </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+    </div>
+
+    <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+            <span class="material-icons-outlined">dashboard</span>Dashboard
+        </li>
+        <li class="sidebar-list-item">
+            <span class="material-icons-outlined">cast_for_education</span> Courses
+        </li>
+        <li class="sidebar-list-item">
+            <span class="material-icons-outlined">groups</span> Students
+        </li>
+        <li class="sidebar-list-item">
+            <span class="material-icons-outlined">person</span> Instructors
+        </li>
+        <li class="sidebar-list-item">
+            <span class="material-icons-outlined">local_library</span>Library
+        </li>
+        <li class="sidebar-list-item">
+            <span class="material-icons-outlined">apartment</span> Department
+        </li>
+        <li class="sidebar-list-item">
+            <span class="material-icons-outlined">settings</span> Settings
+        </li>
+    </ul>
+    </aside>
+    <!-- Main-->
+    <main class="main-container">
+        <div class="main-title">
+            <h1> Dashboard</h1>
+            <p class="welcome-text">Welcome back to your dashboard!</p>
+            </div>
+            <div class="main-cards">
+            <div class="card">
+              <div class="card-inner">
+                  <h3> Total Classes</h3>
+                  <span class="material-icons-outlined">cast_for_education</span>
+              </div>
+                <h1>20</h1>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <h3> Total Students</h3>
+                    <span class="material-icons-outlined">groups</span>
+                </div>
+                <h1>200</h1>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <h3> Active Instructors</h3>
+                    <span class="material-icons-outlined">person</span>
+                </div>
+                <h1>100</h1>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart-card">
+                <h2 class="card-title"> Class Statistics</h2>
+                <table class="card-table">
+                <tr>
+                    <th>Course</th>
+                    <th>Instructor</th>
+                    <th>Enrolled Students</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>CMPS102</td>
+                    <td> 29380</td>
+                    <td>30</td>
+                    <td>OPEN</td>
+                </tr>
+                <tr>
+                    <td>CMPS202</td>
+                    <td>20098</td>
+                    <td>45</td>
+                    <td>Closed</td>
+                </tr>
+                </table>
+                <div id="table-chart"></div>
+            </div>
+            <div class="chart-card">
+                <h2 class="card-title"> New Signups</h2>
+                <div id="table-names"></div>
+                <div id="bar-chart"></div>
+            </div>
+        </div>
+
+    </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/5.3.1/apexcharts.min.js" integrity="sha512-vDa9vdGBRr7yBjqS4IqStOccbaD8QupznCKyOdCIzQSWOW4x4a2Lw402AkJbRViypaxYzRxA83UVGR39Qe5Ftg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+</body>
+</html>
