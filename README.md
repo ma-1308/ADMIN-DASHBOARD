@@ -20,7 +20,7 @@ Total Courses + Total Students+ Active Instructors+ Latest Courses Table + New S
 
 Simple hover effect + transitions for interactive UI elements 
 
-elements
+The design looks different depending on the screen size
 
 🧰 Tools & Libraries Used
 
